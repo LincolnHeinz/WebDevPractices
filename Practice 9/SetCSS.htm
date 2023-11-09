@@ -6,13 +6,35 @@
 <title>JavaScript Practice 1- SetCSS</title>
 
 <script type="text/javascript">
-<!-- Beginning of JavaScript -
+// Beginning of JavaScript -
 
 	function changecolor(code) {
 
 		var myHeading=document.getElementById('Top');
 
     		document.body.style.backgroundColor=code;
+		if(code == "blue"){
+			myHeading.style.color = "value";
+			myHeading.style.textDecoration = "none";
+			myHeading.style.textAlign = "right";
+			myHeading.style.fontSize = "30px";
+		} else if(code == "red") {
+			myHeading.style.color = "black";
+			myHeading.style.textDecoration = "none";
+			myHeading.style.textAlign = "center";
+			myHeading.style.fontSize = "44px";
+		} else if(code == "yellow"){
+			myHeading.style.color = "red";
+			myHeading.style.textDecoration = "underline";
+			myHeading.style.textAlign = "center";
+			myHeading.style.fontSize = "44px";
+		}else{
+			myHeading.style.color = "pink";
+			myHeading.style.textDecoration = "none";
+			myHeading.style.textAlign = "left";
+			myHeading.style.fontSize = "44px";
+		}
+
 
 	/**************************************************************************************
 	Use an if.. else if.. else function to set the following styles using the myHeading variable 
@@ -46,7 +68,7 @@
 		
 		<input type="button" name="Button1" value="RED" onclick="changecolor('red')" />
 
-		<input type="button" name="Button2" value="YELLOW" onClick="changecolor('yellow')" />
+		<input type="button" name="Button2" value="YELLOW" onclick="changecolor('yellow')" />
 
 		<input type="button" name="Button3" value="BLUE" onclick="changecolor('blue')" />
 

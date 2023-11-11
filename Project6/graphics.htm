@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rent a Pet - Graphics</title>
+
+<style>
+    #thumbs, #image {
+        width: 900px;
+        text-align: center;
+        margin: 0 auto;
+        color: #000;
+    }
+
+    #thumbs {
+        margin-top: 10px;
+    }
+        
+    #thumbs img {
+        border: solid 1px #000;
+        margin: 5px;
+    }
+
+    #image{
+        height:500px;
+    }
+
+    .instructions{
+        font-style:italic;
+    }
+</style>
+
+<script>
+    PrintButton1 = new Image;
+    PrintButton2 = new Image;
+    logo1 = new Image;
+    logo2 = new Image;
+
+    if (document.images) {
+        PrintButton1.src = "images/print5.gif";
+        PrintButton2.src = "images/print6.gif";
+        logo1.src = "images/logo1.jpg";
+        logo2.src = "images/logo2.jpg";
+    }
+
+    var imgArray = [
+        'Image1Lg.jpg',
+        'Image2Lg.jpg',
+        'Image3Lg.jpg',
+        'Image4Lg.jpg'
+    ];
+
+    var titleArray = [
+        'Woman and German Shephard',
+        'German Shephard',
+        'Girl Riding Horse',
+        'Boy Riding Pig'
+    ];
+        
+    var imgPath = "Images/Full%20Size/";
+    
+    function swapImage(imgID) {
+        var theImage = document.getElementById('theImage');
+        var textDiv = document.getElementById('bottomText');
+
+        var newImg = imgArray[imgID];
+        theImage.src = imgPath + newImg;
+
+        var textTitle = titleArray[imgID];
+        textDiv.innerHTML = textTitle;
+    }
+        
+    function preloadImages() {      
+        for(var i = 0; i < imgArray.length; i++) {
+            var tmpImg = new Image();
+            tmpImg.src = imgPath + imgArray[i];
+        }
+    }
+</script>
+</head>
+<body onload="preloadImages()">
+    <img src="Images/Full%20Size/Background.png" alt="Background Image">
+
+    <div>
+        <a href=""
+        onmouseover="document.getElementById('print').src='Images/Full%20Size/PrintPage2.png';"
+        onmouseout="document.getElementById('print').src='Images/Full%20Size/PrintPage1.png';">
+        <img src="Images/Print1.jpg" alt="Print Page" width="200" height="50" id="print">
+        </a>
+    </div>
+
+    <div>
+        <a href="" onMouseOver="document.PrintButton.src=PrintButton2.src;"
+        onMouseOut="document.PrintButton.src=PrintButton1.src;">
+            <img src="images/print5.gif" width="250" height="50" id="PrintButton" alt="PrintButton" style="border:none;">
+        </a>
+    </div>
+
+    <div>
+        <a href=""
+        onmouseover="document.getElementById('logo').src='Images/Full%20Size/RentAPet%20Logo1.png'"
+        onmouseout="document.getElementById('logo').src='Images/Full%20Size/RemtAPet%20Logo2.png';">
+            <img src="Images/Full%20Size/RentAPet%20Logo1.png" alt="Logo" id="logo">
+        </a>
+    </div>
+
+    <div>
+        <a href="logo.html" onMouseOver="document.logo.src=logo2.src;"
+        onMouseOut="document.logo.src=logo1.src;">
+            <img src="images/logo1.jpg" width="133" height="126" alt="logo" id="logoImage" style="border:none;">
+        </a>
+    </div>
+
+    <br><br><br><br>
+
+    <div id="thumbs">
+        <img src="Images/Thumbnail/Image1Sm.jpg" alt="Woman and German Shephard" onmouseover="swapImage(0);">
+        <img src="Images/Thumbnail/Image2Sm.jpg" alt="A German Shephard" onmouseover="swapImage(1);">
+        <img src="Images/Thumbnail/Image3Sm.jpg" alt="Girl Riding a Horse" onmouseover="swapImage(2);">
+        <img src="Images/Thumbnail/Image4Sm.jpg" alt="A Boy Riding a Pig" onmouseover="swapImage(3);">
+    </div>
+
+    <div id="image">
+        <img id="theImage" src="Images/Full%20Size/Image1Lg.jpg" alt="Woman and German Shephard">
+        <h3 id="bottomText">Woman and German Shephard</h3>
+    </div>
+
+    <img src="images/2colback.jpg" alt="Colored Background">
+
+    <br><br><br><br>
+
+    <p>
+        <a href="http://validator.w3.org/check?uri=referer">
+            <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88">
+        </a>
+    </p>
+</body>
+</html>

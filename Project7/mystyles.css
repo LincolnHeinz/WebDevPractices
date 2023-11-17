@@ -1,0 +1,29 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background-color: #628252;
+    color: #453808;
+}
+.leftside{
+    float:left;
+    padding-right:10px;
+}
+.rightside{
+    float:right;
+    padding-left:10px;
+}
+h1{
+    color:#183C07;
+}
+h2{
+    color:#183C07;
+}
+a{
+    color: #28244A
+}
+a:visited{
+    color:#0F0B30
+}
+a:hover{
+    color:#4B4769
+}

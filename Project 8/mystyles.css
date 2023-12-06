@@ -1,0 +1,79 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("Images/Photoshop/Background.jpg");
+    background-repeat: repeat-y;
+    color: #453808;
+}
+
+header {
+    background-color: #628252;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+section {
+    padding: 20px;
+}
+
+article h2 {
+    color: #183C07;
+}
+article h3 {
+    color: #183C07
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+article {
+    width: 800px;
+    text-align:center;
+}
+body{
+    background-color: #183C07;
+}
+article a{
+    color: #28244A;
+}
+article a:visited{
+    color:#0F0B30;
+}
+article a:hover{
+    color:#4B4769;
+}

@@ -32,13 +32,12 @@ body{
 
 #navigation{
 	background-color:Gray;
-	margin:0;
     padding:0;
     display: none;
+    width: 100%;
 }
 
 #navigation ul{
-	margin:0;
 	padding:10px;
 	list-style:none;
 	overflow:hidden;
@@ -46,7 +45,6 @@ body{
 
 #navigation li{
 	padding:0;
-	margin:0;
 }
 
 #navigation a{
@@ -62,7 +60,7 @@ body{
 
 }
 
-#navigation a:hover{
+#navigation a:active{
 	color: #FFFF00;
 	border: 2px outset #CCCCCC;
 
@@ -72,12 +70,13 @@ body{
 {
     background-image: url('Images/background.jpg');
     background-repeat:repeat-y;
+    width: 100%;
 }
 
 
 #leftcolumn{
 	text-align:left;
-    column-width: 100%;
+    width: 100%;
 }
 #leftcolumn a:link:after, #leftcolumn a:visited:after{
     content: attr(href);
@@ -86,7 +85,7 @@ body{
 
 #rightcolumn{
 	text-align:left;
-    column-width: 100%;
+    width: 100%;
 }
 
 #rightcolumn p
@@ -94,15 +93,14 @@ body{
     font-size:small;
     word-spacing: 105%;
     line-height:110%;
-    margin:0;
 }
 
 #footer{
 	padding:0;
-	margin:0;
     background-color:Navy;
     color:#FFFFFF;
     text-align:center;
+    width: 100%;
 }
 
 #footer h3{
@@ -111,7 +109,6 @@ body{
 
 #footer p
 {
-    margin:0;
     padding-top: 20px;
 }
 
@@ -150,7 +147,6 @@ h3
     color:#FFFFFF;
     width: 250px;
     font-size: small;
-    margin:0;
     padding-right:5px;
     padding-top: 10px;
 }

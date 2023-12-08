@@ -46,6 +46,8 @@ nav ul li a:hover {
 
 section {
     padding: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
 article h2 {
@@ -76,4 +78,8 @@ article a:visited{
 }
 article a:hover{
     color:#4B4769;
+}
+#paragraph{
+    display: flex;
+    justify-content: center;
 }

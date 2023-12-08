@@ -10,6 +10,11 @@ if (document.images) {
     logo2.src = "Images/Photoshop/RentAPet Logo2.jpg";
 }
 
+var printB = [
+    'Images/Photoshop/PrintPage1.jpg',
+    'Images/Photoshop/PrintPage2.jpg',
+];
+
 var imgArray = [
     'Image1Lg.png',
     'Image2Lg.png',
@@ -43,16 +48,4 @@ function preloadImages() {
         var tmpImg = new Image();
         tmpImg.src = imgPath + imgArray[i];
     }
-}
-window.onload = function() {
-    logo1.src = "Images/Photoshop/RentAPet Logo1.jpg"; 
-    logo2.src = "Images/Photoshop/RentAPet Logo2.jpg";
-
-    var logoElement = document.getElementById('logo');
-    logoElement.onmouseover = function() {
-        logoElement.src = logo2.src;
-    };
-    logoElement.onmouseout = function() {
-        logoElement.src = logo1.src;
-    };
 }

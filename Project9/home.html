@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent A Pet: Home</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <script src="myscripts.js"></script>
+</head>
+<body onload="preloadImages()">
+
+    <div class="container">
+        <header>
+            <a href=""
+onmouseover="document.getElementById('logo').src='Images/Photoshop/RentAPet%20Logo2.jpg';"
+onmouseout="document.getElementById('logo').src='Images/Photoshop/RentAPet%20Logo1.jpg';
+"> <img src="Images/Photoshop/RentAPet%20Logo1.jpg" alt="Logo" id="logo" width="100px" height="100px"></a>
+            <h1>Welcome to Rent A Pet!</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="tributes.html">Tributes</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="links.html">Favorites</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <article>
+                <h2>Home</h2>
+                <p>
+                    Welcome to Rent A Pet!
+                    If you love to interact with pets like we do, you should enjoy looking
+                    around this site. Take a look at our Pet Profiles and take the
+                    opportunity to complete our survey.
+                </p>
+                <h2>Check Out Some Photos!</h2>
+                <div id="thumbs">
+                    <img src="Images/Photos/Image1Sm.png" alt="Woman and German Shephard" onmouseover="swapImage(0);">
+                    <img src="Images/Photos/Image2Sm.png" alt="A German Shephard" onmouseover="swapImage(1);">
+                    <img src="Images/Photos/Image3Sm.png" alt="Girl Riding a Horse" onmouseover="swapImage(2);">
+                    <img src="Images/Photos/Image4Sm.png" alt="A Boy Riding a Pig" onmouseover="swapImage(3);">
+                </div>
+                <div id="image">
+                    <img id="theImage" src="Images/Photos/Image1Lg.png" alt="Woman and German Shephard">
+                    <h3 id="bottomText">Woman and German Shephard</h3>
+                </div>
+                <h3>Tribute</h3>
+                <img src="Images/Photos/Horse2Sm.jpg" alt="Horse Image" width="50">
+                <p>My name is Bessie Anderson and I currently live in a retirement community that has a prohibition on pets.  I really wanted to have a small dog that I could take out for walks, but I though it was not possible.</p>
+                <p><a href="tributes.html#firstTribute">More</a></p>
+            </article>
+        </section>
+
+        <footer>
+            <p>Lincoln's Email: <a href="mailto:lh010537@stu.provo.edu">lh010537@stu.provo.edu</a></p>
+            <p>This web site has been created solely for educational purposes.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

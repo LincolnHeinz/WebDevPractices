@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Rent A Pet: Home</title>
-    <link rel="stylesheet" href="mystyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="forms.css">
     <link rel="stylesheet" href="print.css" media="print">
     <script src="myscripts.js"></script>
 </head>
@@ -14,7 +15,7 @@
             <a href=""
 onmouseover="document.getElementById('logo').src='Images/Photoshop/RentAPet%20Logo2.jpg';"
 onmouseout="document.getElementById('logo').src='Images/Photoshop/RentAPet%20Logo1.jpg';
-"> <img src="Images/Photoshop/RentAPet%20Logo1.jpg" alt="Logo" id="logo" width="100px" height="100px"></a>
+"> <img src="Images/Photoshop/RentAPet%20Logo1.jpg" alt="Logo" id="logo" width="100" height="100"></a>
             <h1>Welcome to Rent A Pet!</h1>
         </header>
 
@@ -28,81 +29,107 @@ onmouseout="document.getElementById('logo').src='Images/Photoshop/RentAPet%20Log
             </ul>
         </nav>
 
-        <section>
+        <main>
             <article>
                 <h2 id="top">Survey:</h2>
-    <form action="FormToEmail.php" method="post" name="Reserve Pet" target="link">
-        <fieldset>
-        <legend>Your Information</legend>
-        <ul>
-            <li>
-                <label for="name">Name:</label>
-                <input id="name" name="name" class="text" type="text">
-            </li>
-            <li>
-                <label for="number">Phone Number:</label>
-                <input id="number" name="name" class="text" type="text">
-            </li>
-            <li>
-                <label for="email">Email:</label>
-                <input id="email" name="email" class="text" type="text">
-            </li>
-            <li>
-                Address:
-            </li>
-        </ul>
-    </fieldset>
-    <fieldset>
-        <legend>Pet Options</legend>
-        <fieldset>
-            <legend>What Pet? <span id="perens">(Choose One)</span></legend>
-        <ul>
-            <li>
-                Dog - $7
-            </li>
-            <li>
-                Cat - $7
-            </li>
-            <li>
-                Bird - $4
-            </li>
-            <li>
-                Hamster - $4
-            </li>
-            <li>
-                Bunny - $5
-            </li>
-            <li>
-                Tarantula - $3
-            </li>
-        </ul>
-    </fieldset>
-    <fieldset>
-    <legend>Any Add-Ons? <span id="perens">(Pick as many as you want)</span></legend>
-        <ul>
-            <li>
-                Food - $0.50
-            </li>
-            <li>
-                Leash - $1
-            </li>
-            <li>
-                Toys -$2 per toy
-            </li>
-            <li>
-                Treats - $0.75
-            </li>
-        </ul>
-    </fieldset>
-    <fieldset>
-        <legend>Other Information</legend>
-        <p>How Long?</p>
-        <p>Anything Else?</p>
-    </fieldset>
-    </fieldset>
-    </form>
+                <p>If you want to rent one of our pets, fill out this survey and you can start renting!</p>
+                <form action="FormToEmail.php" method="post" name="CustomerSurvey" target="NewWindow">
+                    <fieldset class="info-section">
+                        <legend>Your Information</legend>
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input id="name" name="name" type="text" class="text">
+                            </li>
+                            <li>
+                                <label for="number">Phone Number:</label>
+                                <input id="number" name="number" type="text" class="text">
+                            </li>
+                            <li>
+                                <label for="email">Email:</label>
+                                <input id="email" name="email" type="text" class="text">
+                            </li>
+                            <li>
+                                <label for="address">Address:</label>
+                                <input id="address" name="address" type="text" class="text">
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="pet-section">
+                        <legend>Pet Options</legend>
+                        <fieldset>
+                            <legend>What Pet? <span class="perens">(Choose One - Prices are per hour)</span></legend>
+                            <ul>
+                                <li>
+                                    <label for="dog">Dog - $7</label>
+                                    <input id="dog" name="pet" type="radio" class="radio" value="Dog">
+                                </li>
+                                <li>
+                                    <label for="cat">Cat - $7</label>
+                                    <input id="cat" name="pet" type="radio" class="radio" value="Cat">
+                                </li>
+                                <li>
+                                    <label for="bird">Bird - $4</label>
+                                    <input id="bird" name="pet" type="radio" class="radio" value="Bird">
+                                </li>
+                                <li>
+                                    <label for="hamster">Hamster - $4</label>
+                                    <input id="hamster" name="pet" type="radio" class="radio" value="Hamster">
+                                </li>
+                                <li>
+                                    <label for="bunny">Bunny - $5</label>
+                                    <input id="bunny" name="pet" type="radio" class="radio" value="Bunny">
+                                </li>
+                                <li>
+                                    <label for="tarantula">Tarantula - $3</label>
+                                    <input id="tarantula" name="pet" type="radio" class="radio" value="Tarantula">
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Any Add-Ons? <span class="perens">(Pick as many as you want - Prices are per hour)</span></legend>
+                            <ul>
+                                <li>
+                                    <label for="food">Food - $0.50</label>
+                                    <input id="food" name="add_ons" type="checkbox" class="checkbox" value="Food">
+                                </li>
+                                <li>
+                                    <label for="leash">Leash - $1</label>
+                                    <input id="leash" name="add_ons" type="checkbox" class="checkbox" value="Leash">
+                                </li>
+                                <li>
+                                    <label for="toys">Toys - $2 per toy</label>
+                                    <input id="toys" name="add_ons" type="checkbox" class="checkbox" value="Toys">
+                                </li>
+                                <li>
+                                    <label for="treats">Treats - $0.75</label>
+                                    <input id="treats" name="add_ons" type="checkbox" class="checkbox" value="Treats">
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <fieldset class="other-info">
+                            <legend>Other Information</legend>
+                            <label for="time">How Long? <span class="perens">(In Hours)</span></label>
+                            <select id="time" name="time" class="time">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <label for="etc">Anything Else We Need To Know?</label>
+                            <textarea id="etc" name="etc" class="text"></textarea>
+                        </fieldset>
+                    </fieldset>
+                    <input type="submit" class="button" name="submitButton" value="Submit!">
+                    <input type="reset" class="button" name="resetButton" value="Reset">
+                </form>
             </article>
-        </section>
+        </main>
 
         <footer>
             <p>Lincoln's Email: <a href="mailto:lh010537@stu.provo.edu">lh010537@stu.provo.edu</a></p>
